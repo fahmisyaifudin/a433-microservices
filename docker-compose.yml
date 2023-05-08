@@ -7,7 +7,7 @@ services:
     volumes:
       - app-db:/data/db
   item-app:
-    image: ghcr.io/fahmisyaifudin/a433-microsevice-docker:latest
+    image: ghcr.io/fahmisyaifudin/a433-microsevice-docker:v1
     depends_on:
       - item-db
     restart: always
