@@ -1,9 +1,15 @@
 name: Karyajobs backend pipeline
-on: [push]
+on:
+  push:
+    branches:
+      - karsajobs
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: karsajobs
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
