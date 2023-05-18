@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v3
-        with:
+       with:
           ref: karsajobs
       - name: Lint Dockerfile
         uses: hadolint/hadolint-action@v3.1.0
