@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-frontend
+  labels:
+    tier: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: karsajobs-frontend
+        tier: frontend
+    spec:
+      containers:
+        - name: client
+          image: ghcr.io/fahmisyaifudin/a433-microsevice-karsajobs-ui:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: VUE_APP_BACKEND
+              value: "http://${APP_BACKEND_SERVICE_HOST}:${APP_BACKEND_SERVICE_PORT}"
