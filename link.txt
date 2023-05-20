@@ -1,0 +1,2 @@
+https://github.com/fahmisyaifudin/a433-microservices/pkgs/container/a433-microsevice-karsajobs
+https://github.com/fahmisyaifudin/a433-microservices/pkgs/container/a433-microsevice-karsajobs-ui
