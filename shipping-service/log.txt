@@ -1,0 +1,11 @@
+➜  dicoding kubectl logs shipping-service-54d7bd798-86dmr
+
+> shipping-service@1.0.0 start /app
+> node index.js
+
+Server running at 3001
+Order received: Test Message
+** Will be shipped soon! **
+
+Order received: {"orderId":"123456"}
+** Will be shipped soon! **

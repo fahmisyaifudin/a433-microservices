@@ -1,0 +1,8 @@
+➜  dicoding kubectl logs order-service-84df4bb996-mdcvk
+
+> order-service@1.0.0 start /app
+> node index.js
+
+Server running at 3000
+Connected to the queue!
+Order succesfully created!
